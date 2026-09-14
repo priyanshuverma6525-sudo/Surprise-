@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Friendship 💖</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#ffd6e7,#fff4f8,#dff4ff);color:#333;text-align:center}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);padding:12px;box-shadow:0 2px 12px #0002}
+nav a{display:inline-block;margin:4px 6px;padding:9px 13px;border-radius:20px;text-decoration:none;color:#d6336c;font-weight:bold}
+.hero{padding:45px 16px 30px}h1{font-size:clamp(34px,8vw,58px);margin:10px}.hero p{font-size:18px;line-height:1.6}
+button{border:0;border-radius:30px;padding:14px 24px;background:#ff4f81;color:white;font-size:17px;font-weight:bold;cursor:pointer}
+#message{display:none;margin:25px auto;max-width:650px;padding:25px;background:white;border-radius:20px;box-shadow:0 8px 25px #0002;font-size:19px;line-height:1.7}
+section{padding:35px 15px;max-width:1100px;margin:auto}h2{font-size:30px;color:#d6336c}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:white;padding:10px;border-radius:20px;box-shadow:0 7px 22px #0002}.card img{width:100%;height:260px;object-fit:cover;border-radius:15px}.card p{font-weight:bold}
+.note{background:#fff;border-radius:22px;padding:25px;line-height:1.8;box-shadow:0 7px 22px #0002}
+.heart{font-size:45px}footer{padding:30px;color:#777}
+</style>
+</head>
+<body>
+<nav>
+<a href="#home">🏠 Home</a><a href="#photos">📸 Photos</a><a href="#message-section">💌 Message</a><a href="#surprise">🎁 Surprise</a>
+</nav>
+
+<section class="hero" id="home">
+<div class="heart">💖</div>
+<h1>Happy Friendship! 🌸</h1>
+<p>Hello, Friend! 😊<br>This little website is a small collection of friendship memories and good wishes.</p>
+<button onclick="showSurprise()">✨ Click for a Surprise ✨</button>
+<div id="message">🌷 You are a wonderful friend!<br>Keep smiling, keep learning, and keep shining.<br>May our friendship always be filled with happy memories. 💖<br><br>— From Priyanshu</div>
+</section>
+
+<section id="photos">
+<h2>📸 Friendship Memories</h2>
+<div class="gallery">
+<div class="card"><img src="photo1.jpg" alt="Friendship memory 1"><p>🌸 A beautiful friendship moment</p></div>
+<div class="card"><img src="photo2.jpg" alt="Friendship memory 2"><p>☁️ Happy memories together</p></div>
+<div class="card"><img src="photo3.jpg" alt="Friendship memory 3"><p>🤝 Friends forever</p></div>
+<div class="card"><img src="photo4.jpg" alt="Friendship memory 4"><p>💖 Always keep smiling</p></div>
+</div>
+</section>
+
+<section id="message-section">
+<h2>💌 A Small Message</h2>
+<div class="note">Friendship is about sharing smiles, supporting each other, and creating good memories. I hope you always stay happy and keep moving towards your dreams. ✨<br><br><b>Thank you for being a good friend! 😊</b></div>
+</section>
+
+<section id="surprise">
+<h2>🎁 One More Surprise</h2>
+<div class="note"><p>Whenever you feel tired, remember:</p><h2>🌟 Keep Going! 🌟</h2><p>Your future can be full of wonderful things.</p><p>Stay happy • Stay confident • Keep smiling 💖</p></div>
+</section>
+
+<footer>Made with friendship by Priyanshu ❤️</footer>
+<script>
+function showSurprise(){const b=document.getElementById("message");b.style.display="block";b.scrollIntoView({behavior:"smooth",block:"center"});}
+</script>
+</body>
+</html>
